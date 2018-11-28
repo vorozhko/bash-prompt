@@ -16,7 +16,7 @@ Option 1. All informaton on the second line
 source ~/.bash-git-prompt/gitprompt.sh
 source ~/.kube-ps1/kube-ps1.sh
 GIT_PROMPT_START="\u@\h:\w"
-GIT_PROMPT_END="\naws:\$AWS_PROFILE ${Yellow}${PathShort}${ResetColor} \$(kube_ps1)\n$"
+GIT_PROMPT_END="\naws:\$AWS_PROFILE ${ResetColor} \$(kube_ps1)\n$"
 
 ```
 
@@ -24,7 +24,7 @@ Option 2. All informaton on the first line
 ```
 source ~/.bash-git-prompt/gitprompt.sh
 source ~/.kube-ps1/kube-ps1.sh
-GIT_PROMPT_START="\u@\h:\W\e[93m aws:\$AWS_PROFILE\e[39m ${Yellow}${PathShort}${ResetColor} \$(kube_ps1)"
+GIT_PROMPT_START="\u@\h:\W\e[93m aws:\$AWS_PROFILE\e[39m ${ResetColor} \$(kube_ps1)"
 
 ```
 
